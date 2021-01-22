@@ -1,0 +1,113 @@
+body {
+    background-color: #DDF8ED;
+    overflow-x: hidden;
+}
+
+#menu {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+    align-items: center;
+}
+
+#menu>div>img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#icono {
+    position: relative;
+}
+
+#numeroCarrito {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#productos {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productos>div {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 10px 10px 15px -4px #000000;
+    background-color: #F8EDDD;
+    text-align: center;
+}
+
+#productos>div:hover {
+    cursor: pointer;
+    background-color: #EFF8DD;
+}
+
+#productos>div>img {
+    width: 250px;
+    height: 180px;
+}
+
+#productos>div>h4 {
+    font-size: 2em;
+}
+
+#carrito {
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    position: absolute;
+    right: -800px;
+    transition: all;
+    transition-duration: 1.5s;
+    background-color: rgb(77, 76, 76);
+    color: white;
+}
+
+#carrito>div {
+    position: relative;
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    text-align: center;
+}
+
+#papelera {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+#productoscarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#capa {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+}
